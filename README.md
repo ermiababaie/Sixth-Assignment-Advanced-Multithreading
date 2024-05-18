@@ -1,6 +1,6 @@
 # Advanced Multithreading
 
-
+ 
 ## Introduction
 In this assignment, you are given three problems focused on various areas of multithreaded programming. Solve each exercise according to the provided guidelines.
 
