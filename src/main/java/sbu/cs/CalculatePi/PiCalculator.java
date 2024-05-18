@@ -53,30 +53,35 @@ public class PiCalculator {
     {
         pi = new BigDecimal(3);
 
-//        ExecutorService threadPool = Executors.newFixedThreadPool(4);
-//
-//        for (int i = 0; i <= 10; i++) {
-//            piCal task = new piCal((i * 1000) + 1);          // accuracy, try 200 and see the difference!
-//            threadPool.execute(task);
-//        }
-//
-//        threadPool.shutdown();
+        ExecutorService threadPool = Executors.newFixedThreadPool(4);
 
-        List<Thread> threadList = new ArrayList<>();
         for (int i = 0; i <= 10; i++) {
-            piCal pc = new piCal(i * 1000 + 1);
-            Thread thread = new Thread(pc);
-            threadList.add(thread);
-            thread.start();
+            piCal task = new piCal((i * 1000) + 1);          // accuracy, try 200 and see the difference!
+            threadPool.execute(task);
         }
-        for (Thread i: threadList) {
-            try {
-                i.join();
-            }
-            catch (InterruptedException e) {
-                System.out.println(e.getMessage());
-            }
+
+        threadPool.shutdown();
+         try {
+            threadPool.awaitTermination(10000, TimeUnit.MILLISECONDS);
         }
+        catch (InterruptedException e) {
+            System.out.println(e.getMessage());
+        }
+        //List<Thread> threadList = new ArrayList<>();
+        //for (int i = 0; i <= 10; i++) {
+        //    piCal pc = new piCal(i * 1000 + 1);
+        //    Thread thread = new Thread(pc);
+        //    threadList.add(thread);
+        //    thread.start();
+        //}
+       // for (Thread i: threadList) {
+       //     try {
+        //        i.join();
+        //    }
+       //     catch (InterruptedException e) {
+        //        System.out.println(e.getMessage());
+       //     }
+        //}
         return pi.toString().substring(0, floatingPoint + 2);
     }
 
