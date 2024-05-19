@@ -17,7 +17,8 @@
 #### pros and cons: This formula is not easily simulated by the computer and is not suitable for calculating the pi number
 #### learn more: https://en.wikipedia.org/wiki/Buffon%27s_needle_problem
 
-### Leibniz formula :
+### Leibniz formula : :book:
+    π/4 = 1 - 1/3 + 1/5 - 1/7 +...
 
 ### Nilakantha's formula :
 ### Chudnovsky algorithm :
