@@ -51,4 +51,8 @@
 #### In my algorithm, it is easier to calculate pi with fewer digits and it has the same time complexity as Chudnovsky(for small numbers)
 
 ## Code explanation:
-### 
+### I have used BigDecimal to calculate the results of large operations and divide the interval required to calculate pi into intervals of thousands of numbers and assign each one to a thread.
+
+## Bugs fixing: 
+#### threadPool: In ThreadPool, it is important that all threads finish and do not interfere with each other. For this matter, it is enough to use these: awaitTermination and Synchronization
+#### wrong answer: For this problem, I increased the length of the series interval
