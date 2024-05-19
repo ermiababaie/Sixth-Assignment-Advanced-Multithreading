@@ -25,6 +25,7 @@
 ### Nilakantha's formula : :open_book:
     (π-3)/4 = 1/2*3*4 - 1/4*5*6 + 1/6*7*8 - ...
 #### pros and cons: This formula is easy to implement to calculate pi, But for the number of digits more than a thousand, it requires a lot of calculations and It has low accuracy
+
 #### learn more: http://www.maeckes.nl/Formule%20voor%20pi%20%28Nilakantha%29%20GB.html
 
 ### Chudnovsky algorithm : 
