@@ -1,5 +1,7 @@
 # pi and calculation formula
 ## what is pi? :pie:
+![57581t1](https://github.com/ermiababaie/Sixth-Assignment-Advanced-Multithreading/assets/160699260/c3284b74-c594-43cf-9b47-f798e9633e04)
+
 #### the number π is a mathematical constant that is the ratio of a circle's circumference to its diameter, approximately equal to 3.14159. The number π appears in many formulae across mathematics and physics. It is an irrational number, meaning that it cannot be expressed exactly as a ratio of two integers, although fractions such as 22/7 are commonly used to approximate it. 
 
 ## Approximate value and digits : :black_nib:
@@ -9,7 +11,9 @@
 ## how to calculate pi? :memo:
 
 ### Buffon's needle problem : :game_die:
-##### in probability theory, Buffon's needle problem is a question first posed in the 18th century by Georges-Louis Leclerc, Comte de Buffon. The answer to this problem can be used as an approximate solution to obtain the pi number.
+ in probability theory, Buffon's needle problem is a question first posed in the 18th century by Georges-Louis Leclerc, Comte de Buffon. The answer to this problem can be used as an approximate solution to obtain the pi number.
+#### pros and cons: This formula is not easily simulated by the computer and is not suitable for calculating the pi number
+#### learn more: https://en.wikipedia.org/wiki/Buffon%27s_needle_problem
 
 ### Leibniz formula :
 
