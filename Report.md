@@ -47,4 +47,5 @@
 2. space complexity
 3. Difficulty of implementation
 4. Output accuracy
-#### The difference between the stated algorithms is the number of operations required to find a specific number of digits of the pi number
+#### The difference between the stated algorithms is the number of operations required to find a specific number of digits of the pi number. Chudnovsky is the best in this case But it has very large constant numbers And that's why I chose to use another algorithm
+#### In my algorithm, it is easier to calculate pi with fewer digits and it has the same time complexity as Chudnovsky(for small numbers)
