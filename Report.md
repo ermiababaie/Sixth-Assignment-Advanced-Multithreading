@@ -28,5 +28,8 @@
 #### learn more: http://www.maeckes.nl/Formule%20voor%20pi%20%28Nilakantha%29%20GB.html
 
 ### Chudnovsky algorithm : 
+##### The Chudnovsky algorithm is a fast method for calculating the digits of π, based on Ramanujan's π formulae. Published by the Chudnovsky brothers in 1988, it was used to calculate π to a billion decimal places.
+##### It was used in the world record calculations of 2.7 trillion digits of π in December 2009, 10 trillion digits in October 2011, 22.4 trillion digits in November 2016, 31.4 trillion digits in September 2018–January 2019, 50 trillion digits on January 29, 2020,[8] 62.8 trillion digits on August 14, 2021, 100 trillion digits on March 21, 2022, and 105 trillion digits on March 14, 2024
+#### learn more: https://en.wikipedia.org/wiki/Chudnovsky_algorithm
 
 ### my favorite formula :
