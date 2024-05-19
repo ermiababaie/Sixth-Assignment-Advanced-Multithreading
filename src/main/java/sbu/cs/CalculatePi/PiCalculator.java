@@ -1,27 +1,90 @@
 package sbu.cs.CalculatePi;
 
+import java.math.BigDecimal;
+import java.math.MathContext;
+import java.math.RoundingMode;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+
 public class PiCalculator {
+    public static BigDecimal pi;
+    public static class piCal implements Runnable {
+        int i;
+        MathContext mc = new MathContext(1000);
 
-    /**
-     * Calculate pi and represent it as a BigDecimal object with the given floating point number (digits after . )
-     * There are several algorithms designed for calculating pi, it's up to you to decide which one to implement.
-     Experiment with different algorithms to find accurate results.
+        public piCal(int i) {
+            this.i = i;
+        }
 
-     * You must design a multithreaded program to calculate pi. Creating a thread pool is recommended.
-     * Create as many classes and threads as you need.
-     * Your code must pass all of the test cases provided in the test folder.
+        public void run() {
+            BigDecimal x = new BigDecimal(1);
+            BigDecimal y = new BigDecimal(1);
+            for (int j = 1; j < i; j++) {
+                x = x.multiply(new BigDecimal(2 * j - 1));
+                y = y.multiply(new BigDecimal(2 * j));
+                y = y.multiply(new BigDecimal(4));
+            }
+            for (int ii = i; ii < (i + 1000); ii++) {
+                x = x.multiply(new BigDecimal(2 * ii - 1));
+                y = y.multiply(new BigDecimal(2 * ii));
+                y = y.multiply(new BigDecimal(4));
 
-     * @param floatingPoint the exact number of digits after the floating point
-     * @return pi in string format (the string representation of the BigDecimal object)
-     */
+                BigDecimal save = new BigDecimal(3);
+                BigDecimal yy = y;
+                yy = yy.multiply(new BigDecimal(2 * ii + 1), mc);
 
-    public String calculate(int floatingPoint)
+                BigDecimal jadid = x;
+                jadid = jadid.divide(yy, mc);
+                save = save.multiply(jadid, mc);
+                addToPi(save);
+            }
+        }
+    }
+
+
+    public static synchronized void addToPi(BigDecimal value){
+        pi = pi.add(value);
+    }
+
+    public static String calculate(int floatingPoint)
     {
-        // TODO
-        return null;
+        pi = new BigDecimal(3);
+
+        ExecutorService threadPool = Executors.newFixedThreadPool(4);
+
+        for (int i = 0; i <= 10; i++) {
+            piCal task = new piCal((i * 1000) + 1);          // accuracy, try 200 and see the difference!
+            threadPool.execute(task);
+        }
+
+        threadPool.shutdown();
+         try {
+            threadPool.awaitTermination(10000, TimeUnit.MILLISECONDS);
+        }
+        catch (InterruptedException e) {
+            System.out.println(e.getMessage());
+        }
+        //List<Thread> threadList = new ArrayList<>();
+        //for (int i = 0; i <= 10; i++) {
+        //    piCal pc = new piCal(i * 1000 + 1);
+        //    Thread thread = new Thread(pc);
+        //    threadList.add(thread);
+        //    thread.start();
+        //}
+       // for (Thread i: threadList) {
+       //     try {
+        //        i.join();
+        //    }
+       //     catch (InterruptedException e) {
+        //        System.out.println(e.getMessage());
+       //     }
+        //}
+        return pi.toString().substring(0, floatingPoint + 2);
     }
 
     public static void main(String[] args) {
-        // Use the main function to test the code yourself
     }
 }
