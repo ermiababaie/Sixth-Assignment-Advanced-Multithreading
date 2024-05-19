@@ -56,3 +56,5 @@
 ## Bugs fixing: :wrench:
 #### threadPool: In ThreadPool, it is important that all threads finish and do not interfere with each other. For this matter, it is enough to use these: awaitTermination and Synchronization
 #### wrong answer: For this problem, I increased the length of the series interval
+#### https://stackoverflow.com/questions/1250643/how-to-wait-for-all-threads-to-finish-using-executorservice
+#### https://www.geeksforgeeks.org/synchronization-in-java/
