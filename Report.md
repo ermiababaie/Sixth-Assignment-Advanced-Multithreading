@@ -19,8 +19,11 @@
 
 ### Leibniz formula : :book:
     π/4 = 1 - 1/3 + 1/5 - 1/7 +...
+#### pros and cons: This formula is easy to implement to calculate pi, but it is very slow
+#### learn more: https://en.wikipedia.org/wiki/Leibniz_formula_for_π 
 
 ### Nilakantha's formula :
+    (π-3)/4 = 1/2*3*4 - 1/4*5*6 + 1/6*7*8 - ...
 ### Chudnovsky algorithm :
 
 ### my favorite formula :
