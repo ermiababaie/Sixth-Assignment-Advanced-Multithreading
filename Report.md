@@ -39,3 +39,10 @@
 #### pros and cons: This algorithm is very easy to implement and is very fast and highly accurate. This algorithm has the ability to be implemented with multy threads
 
 #### learn more: http://ajennings.net/blog/a-million-digits-of-pi-in-9-lines-of-javascript.html
+
+
+## how to choose an algorithm for this problem?
+#### In choosing the algorithm to solve the problem, we must pay attention to the following:
+1. time complexity
+2. Difficulty of implementation
+3. 
