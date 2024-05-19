@@ -9,7 +9,7 @@
 ## how to calculate pi? :memo:
 
 ### Buffon's needle problem : :game_die:
-#####
+##### in probability theory, Buffon's needle problem is a question first posed in the 18th century by Georges-Louis Leclerc, Comte de Buffon. The answer to this problem can be used as an approximate solution to obtain the pi number.
 
 ### Leibniz formula :
 
