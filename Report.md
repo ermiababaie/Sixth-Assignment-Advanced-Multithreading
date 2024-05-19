@@ -9,5 +9,8 @@
 ## how to calculate pi?
 
 ### Leibniz formula :
+
 ### Nilakantha's formula :
 ### Chudnovsky algorithm :
+
+### my favorite formula :
