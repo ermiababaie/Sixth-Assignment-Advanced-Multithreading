@@ -28,12 +28,12 @@
 
 #### learn more: http://www.maeckes.nl/Formule%20voor%20pi%20%28Nilakantha%29%20GB.html
 
-### Chudnovsky algorithm : 
+### Chudnovsky algorithm : :open_book:
 ##### The Chudnovsky algorithm is a fast method for calculating the digits of π, based on Ramanujan's π formulae. Published by the Chudnovsky brothers in 1988, it was used to calculate π to a billion decimal places.
 ##### It was used in the world record calculations of 2.7 trillion digits of π in December 2009, 10 trillion digits in October 2011, 22.4 trillion digits in November 2016, 31.4 trillion digits in September 2018–January 2019, 50 trillion digits on January 29, 2020,[8] 62.8 trillion digits on August 14, 2021, 100 trillion digits on March 21, 2022, and 105 trillion digits on March 14, 2024
 #### learn more: https://en.wikipedia.org/wiki/Chudnovsky_algorithm
 
-### my favorite formula :
+### my favorite formula : :sparkles:
 <img width="245" alt="Screenshot 2024-05-19 at 6 40 59 PM" src="https://github.com/ermiababaie/Sixth-Assignment-Advanced-Multithreading/assets/160699260/4ce539d4-3149-436a-952e-1d259648b3e2">
 
 #### pros and cons: This algorithm is very easy to implement and is very fast and highly accurate. This algorithm has the ability to be implemented with multy threads
@@ -41,11 +41,11 @@
 #### learn more: http://ajennings.net/blog/a-million-digits-of-pi-in-9-lines-of-javascript.html
 
 
-## how to choose an algorithm for this problem?
+## how to choose an algorithm for this problem? :computer:
 #### In choosing the algorithm to solve the problem, we must pay attention to the following:
-1. time complexity
-2. space complexity
-3. Difficulty of implementation
-4. Output accuracy
+1. time complexity :stopwatch:
+2. space complexity :space_invader:
+3. Difficulty of implementation :weight_lifting:
+4. Output accuracy :dart:
 #### The difference between the stated algorithms is the number of operations required to find a specific number of digits of the pi number. Chudnovsky is the best in this case But it has very large constant numbers And that's why I chose to use another algorithm
 #### In my algorithm, it is easier to calculate pi with fewer digits and it has the same time complexity as Chudnovsky(for small numbers)
