@@ -35,4 +35,5 @@
 ### my favorite formula :
 <img width="245" alt="Screenshot 2024-05-19 at 6 40 59 PM" src="https://github.com/ermiababaie/Sixth-Assignment-Advanced-Multithreading/assets/160699260/4ce539d4-3149-436a-952e-1d259648b3e2">
 #### pros and cons: This algorithm is very easy to implement and is very fast and highly accurate. This algorithm has the ability to be implemented with multy threads
+
 #### learn more: http://ajennings.net/blog/a-million-digits-of-pi-in-9-lines-of-javascript.html
