@@ -44,5 +44,7 @@
 ## how to choose an algorithm for this problem?
 #### In choosing the algorithm to solve the problem, we must pay attention to the following:
 1. time complexity
-2. Difficulty of implementation
-3. 
+2. space complexity
+3. Difficulty of implementation
+4. Output accuracy
+#### The difference between the stated algorithms is the number of operations required to find a specific number of digits of the pi number
